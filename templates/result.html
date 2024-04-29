@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat de la Prédiction</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body class="resultat">
+    <h1>Résultat de la Prédiction</h1>
+    <div>
+        <h1 class="Text_Entrer">Le texte entré :</h1>
+        <p>{{ texte }}</p>
+    </div>
+    <h1>Le sentiment prédit : <label class="{{ sentiment_classe }}">{{ sentiment_predit }} 
+        {% if sentiment_predit == "positive" %}
+            &#x1F604; <!-- Emoji pour une émotion positive -->
+        {% elif sentiment_predit == "negative" %}
+            &#x1F627; <!-- Emoji pour une émotion négative  &#x1F626-->
+        {% endif %}
+    </label></h1> <!-- Appliquer la classe CSS -->
+    <label for=""> 
+        <a href ="javascript:history.go(-1)">Revenir à la précédente</a>  || 
+        <a href="/">Retourner à l'accueil</a> 
+    </label>
+    <div class="remarque" id="copyright">
+        <h6  >&copy; copyright: Otman 2024<br />Facult&eacute; des Sciences Dhar El Mahraz</br><a href="https://www.instagram.com/taibaotman/">Otman@fsdm.usmba.ac.ma</a></div>
+    </div>
+</body>
+</html>

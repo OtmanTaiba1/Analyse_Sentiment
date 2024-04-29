@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prédiction de Sentiment</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script>
+        function onSubmitForm(event) {
+            var texte = document.getElementById("texte").value.trim();
+            if (texte === "") {
+                alert("Veuillez entrer un texte avant de soumettre.");
+                event.preventDefault(); // Empêcher l'envoi du formulaire
+            }
+        }
+    </script>
+</head>
+<body >
+    <div >
+        <h1 class="Prediction_Sentiment">Prédiction de Sentiment</h1>
+        <form action="/result" method="post" onsubmit="onSubmitForm(event)">
+            <label for="texte" class="Entrer_Text">Entrez votre texte (English):</label>
+            <textarea id="texte" name="texte" rows="4" cols="50"></textarea><br>
+            <button type="submit">Prédire le Sentiment</button><br>
+            <a href ="javascript:history.go(0)">Revenir à la précédente</a>
+        </form>
+        <div class="remarque" id="copyright">
+            <h6  >&copy; copyright: Otman 2024<br />Facult&eacute; des Sciences Dhar El Mahraz</br><a href="https://www.instagram.com/taibaotman/">Otman@fsdm.usmba.ac.ma</a></div>
+        </div>
+        <div class="remarqued">
+            Ce modèle est entraîné sur Dataset doctor <br>
+            Ce modèle fonctionne mieux lorsque vous donnez un avis un retour d’information pour le médecin.
+         </div>
+    </div>
+</body>
+</html>

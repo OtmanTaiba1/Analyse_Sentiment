@@ -1,0 +1,117 @@
+/* Style de base */
+
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;  /* Utilisation d'une police de base */
+    background-color: #f5f5f5;  /* Arrière-plan clair */
+    color: #333;  /* Couleur de texte sombre */
+    margin-top:10% ;
+    padding: 0;
+}
+
+/* Style pour les titres */
+h1 {
+    font-size: 2em;  /* Taille du titre principal */
+    text-align: center;  /* Centrer les titres */
+    margin-top: 20px;
+}
+
+/* Style pour les paragraphes */
+p {
+    font-size: 1em;  /* Taille du texte des paragraphes */
+    line-height: 1.5;  /* Espacement entre les lignes */
+}
+
+/* Style pour les formulaires */
+form {
+    display: flex;
+    flex-direction: column;  /* Disposition verticale */
+    align-items: center;  /* Centrer les éléments du formulaire */
+    padding: 20px;
+}
+
+/* Style pour les boutons */
+button {
+    background-color: #4CAF50;  /* Couleur verte */
+    color: rgb(255, 255, 255);  /* Texte blanc */
+    padding: 10px 20px;  /* Ajout de marge interne */
+    border: none;  /* Sans bordure */
+    border-radius: 5px;  /* Coins arrondis */
+    cursor: pointer;  /* Curseur en forme de main */
+    transition: background-color 0.3s;  /* Animation lors du survol */
+}
+
+/* Effet de survol pour les boutons */
+button:hover {
+    background-color: #8845a0;  /* Couleur légèrement plus foncée lors du survol */
+}
+
+/* Style pour les champs de texte */
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 80%;  /* Champ de texte large */
+    padding: 30px;  /* Ajout de marge interne */
+    border: 1px solid #ccc;  /* Bordure grise */
+    border-radius: 5px;  /* Coins arrondis */
+    resize: vertical;  /* Autorise le redimensionnement vertical */
+}
+
+
+
+/* Style pour les liens */
+a {
+    color: #0066cc;  /* Couleur bleue pour les liens */
+    text-decoration: none;  /* Pas de soulignement */
+    transition: color 0.3s;  /* Animation lors du survol */
+}
+
+a:hover {
+    color: #003366;  /* Couleur plus foncée lors du survol */
+}
+
+
+/* Classes pour les sentiments */
+.positive {
+    font-size: 75px;
+    color: rgb(8, 166, 5);  /* Texte en vert pour un sentiment positif */
+}
+
+.positive:hover{
+    color: rgb(166, 5, 142);  /* Texte en vert pour un sentiment positif */
+
+}
+
+.negative {
+    font-size: 75px;
+
+    color: red;  /* Texte en rouge pour un sentiment négatif */
+}
+
+
+.resultat{
+    background-color: white;
+    text-align: center;
+}
+
+.Text_Entrer,.Sentiment_Predit,.Prediction_Sentiment,.Entrer_Text{
+    color: #0066cc;
+}
+.remarqued{
+    font-size: 8px;    
+    color: #4CAF50;
+    position: fixed;
+    bottom: 0;
+    width: 10000px;
+
+}
+
+#copyright {
+    color: red;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
